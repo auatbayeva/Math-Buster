@@ -13,6 +13,11 @@
 		3011E0B22ABC074100BF157E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3011E0B02ABC074100BF157E /* Main.storyboard */; };
 		3011E0B42ABC074300BF157E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3011E0B32ABC074300BF157E /* Assets.xcassets */; };
 		3011E0B72ABC074300BF157E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3011E0B52ABC074300BF157E /* LaunchScreen.storyboard */; };
+		306F53A12AC43CD40008CC63 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306F53A02AC43CD30008CC63 /* WelcomeViewController.swift */; };
+		306F53A72AC446CA0008CC63 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306F53A52AC446CA0008CC63 /* ScoreTableViewCell.swift */; };
+		306F53A82AC446CA0008CC63 /* ScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 306F53A62AC446CA0008CC63 /* ScoreTableViewCell.xib */; };
+		306F53AB2AC53F050008CC63 /* ScoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306F53A92AC53F050008CC63 /* ScoreDetailViewController.swift */; };
+		306F53AC2AC53F050008CC63 /* ScoreDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 306F53AA2AC53F050008CC63 /* ScoreDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		3011E0B32ABC074300BF157E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3011E0B62ABC074300BF157E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3011E0B82ABC074300BF157E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		306F53A02AC43CD30008CC63 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		306F53A52AC446CA0008CC63 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		306F53A62AC446CA0008CC63 /* ScoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreTableViewCell.xib; sourceTree = "<group>"; };
+		306F53A92AC53F050008CC63 /* ScoreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetailViewController.swift; sourceTree = "<group>"; };
+		306F53AA2AC53F050008CC63 /* ScoreDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		3011E0A92ABC074100BF157E /* Math Buster */ = {
 			isa = PBXGroup;
 			children = (
+				3011E0BE2ABC077C00BF157E /* App */,
+				3011E0C02ABC07FB00BF157E /* Controller */,
+				3011E0C12ABC081400BF157E /* Resource */,
+			);
+			path = "Math Buster";
+			sourceTree = "<group>";
+		};
+		3011E0BE2ABC077C00BF157E /* App */ = {
+			isa = PBXGroup;
+			children = (
 				3011E0AA2ABC074100BF157E /* AppDelegate.swift */,
 				3011E0AC2ABC074100BF157E /* SceneDelegate.swift */,
-				3011E0AE2ABC074100BF157E /* ViewController.swift */,
-				3011E0B02ABC074100BF157E /* Main.storyboard */,
-				3011E0B32ABC074300BF157E /* Assets.xcassets */,
 				3011E0B52ABC074300BF157E /* LaunchScreen.storyboard */,
 				3011E0B82ABC074300BF157E /* Info.plist */,
 			);
-			path = "Math Buster";
+			path = App;
+			sourceTree = "<group>";
+		};
+		3011E0C02ABC07FB00BF157E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				306F53A22AC446750008CC63 /* Cell */,
+				3011E0AE2ABC074100BF157E /* ViewController.swift */,
+				3011E0B02ABC074100BF157E /* Main.storyboard */,
+				306F53A02AC43CD30008CC63 /* WelcomeViewController.swift */,
+				306F53A92AC53F050008CC63 /* ScoreDetailViewController.swift */,
+				306F53AA2AC53F050008CC63 /* ScoreDetailViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3011E0C12ABC081400BF157E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3011E0B32ABC074300BF157E /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		306F53A22AC446750008CC63 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				306F53A52AC446CA0008CC63 /* ScoreTableViewCell.swift */,
+				306F53A62AC446CA0008CC63 /* ScoreTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +174,8 @@
 			files = (
 				3011E0B72ABC074300BF157E /* LaunchScreen.storyboard in Resources */,
 				3011E0B42ABC074300BF157E /* Assets.xcassets in Resources */,
+				306F53A82AC446CA0008CC63 /* ScoreTableViewCell.xib in Resources */,
+				306F53AC2AC53F050008CC63 /* ScoreDetailViewController.xib in Resources */,
 				3011E0B22ABC074100BF157E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306F53AB2AC53F050008CC63 /* ScoreDetailViewController.swift in Sources */,
+				306F53A72AC446CA0008CC63 /* ScoreTableViewCell.swift in Sources */,
 				3011E0AF2ABC074100BF157E /* ViewController.swift in Sources */,
+				306F53A12AC43CD40008CC63 /* WelcomeViewController.swift in Sources */,
 				3011E0AB2ABC074100BF157E /* AppDelegate.swift in Sources */,
 				3011E0AD2ABC074100BF157E /* SceneDelegate.swift in Sources */,
 			);
@@ -289,12 +341,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WH4G4PZ5KA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Math Buster/Info.plist";
+				INFOPLIST_FILE = "Math Buster/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,12 +370,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WH4G4PZ5KA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Math Buster/Info.plist";
+				INFOPLIST_FILE = "Math Buster/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
